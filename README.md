@@ -27,7 +27,7 @@ $ go run ../main.go -mode parse
 $ go run ../main.go -mode merge
 ```
 
-If you want to apply more universities, please give the number to the argument of `Generator` (instead of 10). 
+If you want to apply more universities, please give the number to the argument of `-univ` (instead of 10). 
 
 As a result (in the case of 10 universities), `dataset.txt` of URIs will be generated at `workspace`, as follows.
 
