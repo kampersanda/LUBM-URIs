@@ -605,8 +605,10 @@ public class Generator {
   private void _generate() {
     System.out.println("Started...");
     try {
+    //   log_ = new PrintStream(new FileOutputStream(System.getProperty("user.dir") +
+    //                                              "\\" + LOG_FILE));
       log_ = new PrintStream(new FileOutputStream(System.getProperty("user.dir") +
-                                                 System.getProperty("file.separator") + LOG_FILE));
+                                                 System.getProperty("file.separator") + LOG_FILE));  // changed by Kanda
       writer_.start();
       for (int i = 0; i < instances_[CS_C_UNIV].num; i++) {
         _generateUniv(i + startIndex_);
@@ -645,8 +647,10 @@ public class Generator {
    * NOTE: Use univIndex instead of instances[CS_C_UNIV].count till generateASection(CS_C_UNIV, ) is invoked.
    */
   private void _generateDept(int univIndex, int index) {
+    // String fileName = System.getProperty("user.dir") + "\\" +
+    //     _getName(CS_C_UNIV, univIndex) + INDEX_DELIMITER + index + _getFileSuffix();
     String fileName = System.getProperty("user.dir") + System.getProperty("file.separator") +
-        _getName(CS_C_UNIV, univIndex) + INDEX_DELIMITER + index + _getFileSuffix();
+        _getName(CS_C_UNIV, univIndex) + INDEX_DELIMITER + index + _getFileSuffix(); // changed by Kanda
     writer_.startFile(fileName);
 
     //reset

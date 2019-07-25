@@ -1,22 +1,20 @@
-# LUBM-URIs: Generator of dataset of URI strings via Lehigh University Benchmark
+# LUBM-URIs: Generator of URI-string dataset via Lehigh University Benchmark
 
-Through this library, you can produce a dataset of URI strings via [Lehigh University Benchmark (LUBM)](http://swat.cse.lehigh.edu/projects/lubm/).
+This library generates a dataset of URI strings via [Lehigh University Benchmark (LUBM)](http://swat.cse.lehigh.edu/projects/lubm/).
 
 ## Usage
 
 ### Compile the [UBA](http://swat.cse.lehigh.edu/projects/lubm/) data generator.
 
-First of all, please visit directory `uba1.7` and compile the source files as follows.
+First of all, please compile the source files as the following command.
 
 ```
-$ javac -d classes src/edu/lehigh/swat/bench/uba/*.java
+$ javac -d uba1.7/classes uba1.7/src/edu/lehigh/swat/bench/uba/*.java
 ```
 
 ### Generate URI datasets
 
-Please come back to the project root directory from `uba1.7`.
-
-You can generate a dataset by extracting URIs from the RDF dataset generated for 10 universities, as follows.
+You can generate a dataset by extracting URIs from the RDF dataset generated for 10 universities, as the following commands.
 
 ```
 $ mkdir workspace
@@ -49,4 +47,4 @@ $ wc dataset.txt
 
 ## Licensing
 
-This library is free software provided under [GNU General Public License v2.0 License](https://github.com/kampersanda/LUBM-URIs/blob/master/LICENSE), following the original License of [UBA1.7](http://swat.cse.lehigh.edu/projects/lubm/).
+This library is free software provided under [GNU General Public License v2.0 License](https://github.com/kampersanda/LUBM-URIs/blob/master/LICENSE), following the original License of [UBA 1.7](http://swat.cse.lehigh.edu/projects/lubm/).
