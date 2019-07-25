@@ -46,3 +46,7 @@ $ head dataset.txt
 $ wc dataset.txt 
   314870  314870 19239244 dataset.txt
 ```
+
+## Licensing
+
+This library is free software provided under [GNU General Public License v2.0 License](https://github.com/kampersanda/LUBM-URIs/blob/master/LICENSE), following the original License of [UBA1.7](http://swat.cse.lehigh.edu/projects/lubm/).
